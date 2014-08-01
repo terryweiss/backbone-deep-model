@@ -11,7 +11,7 @@
         module.exports = factory(require('underscore'), require('backbone'));
     } else {
         // globals
-        factory(_, Backbone);
+        factory(require("lodash"), Backbone);
     }
 }(function(_, Backbone) {
 
