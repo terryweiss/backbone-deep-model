@@ -135,7 +135,7 @@
             if (defaults = _.result(this, 'defaults')) {
                 //<custom code>
                 // Replaced the call to _.defaults with _.deepExtend.
-                attrs = _.deepExtend({}, defaults, attrs);
+                attrs = _.defaults({}, defaults, attrs);
                 //</custom code>
             }
             this.set(attrs, options);
